@@ -1,17 +1,25 @@
+body {
+  font-family: "Open Sans";
+}
+.container {
+  margin: auto;
+}
 .item {
   display: inline-block;
-  width: 25%;
-  height: 300px;
+  width: 30%;
+  height: 330px;
   position: relative;
   margin: 10px 10px 10px 10px;
+  overflow: hidden;
 }
 .img-container {
   width: 100%;
-  height: 100%;
+  height: 85%;
   position:relative;
   display:inline-block;
   overflow:hidden;
   background-color: #E1E1E1;
+  margin-bottom: 10px;
 }
 .img-container>img {
   max-width: 100%;
@@ -28,11 +36,11 @@
   display: none;
   position: absolute;
   background-color: #FFFFFF;
-  top: 50%;
+  top: 40%;
   left: 35%;
 }
 div:hover ~ .add-btn {
-	display: inline-block;;
+	display: inline-block;
 }
 .info {
   width: 15%;
@@ -46,13 +54,15 @@ div:hover ~ .add-btn {
 }
 .description {
   display: inline;
+  float: left;
+  width: 80%;
 }
 .old-price {
   display: inline;
   color: #B7B7B7;
   text-decoration: line-through;
-  text-align: right;
+  float: right;
 }
 .price {
-  text-align: right;
+  float: right;
 }
